@@ -49,7 +49,7 @@ body {
 }
 
 .right-column {
-	float: left;
+	float: right;
 	vertical-align: top;
 	width: 50%;
 }
