@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -25,8 +25,6 @@ body {
 }
 
 .Pane-bg {
-	background-color: #0e1003 ;
-	background-image: url(nagrand_transp.png);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
@@ -42,50 +40,62 @@ body {
 	display: table;
 }
 
+.columns {
+	clear: both;
+	content: "";
+	display: flex;
+}
+
 .left-column {
+	float: left;
 	vertical-align: top;
-	width: 50%;
+	width: 54%;
 }
 
 .right-column {
-	float: right;
+	float: left;
 	vertical-align: top;
-	width: 50%;
+	width: 45%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+	.columns {
+		flex-direction: column-reverse;
+		width: 100%;
+	}
+	
 	.left-column {
 		width: 100%;
 	}
 	  
 	.right-column {
-		width: 0;
-		visibility: collapse;
+		margin-left: auto;
 	}
 }
 
-.right-column > img {
+.right-column img {
 	max-width: 100%;
 }
 
 .title {
-	text-align: center; 
-	vertical-align: top;
-}
-
-.title img {
+	display: block;
+	margin-left: 50px;
 	margin-top: 50px;
+	text-align: left; 
+	vertical-align: top;
 }
 
 .title h1 {
 	color: white;
-	font-size: 30px;
+	display: inline;
+	font-size: 4rem;
+	margin-left: 30px;
 	text-shadow: 0 0 1px transparent,0 1px 2px rgba(0,0,0,.8);
 }
 
 .class-desc {
 	color: white; 
-	font-size: 1.25vw;
+	font-size: 1.25rem;
 	margin: 20px;
 	text-align: left;
 	text-shadow: 0 0 1px transparent,0 1px 2px rgba(0,0,0,.8);
@@ -94,13 +104,13 @@ body {
 
 h2 {
 	color: white; 
-	font-size: 25px;
+	font-size: 1.75rem;
 	text-shadow: 0 0 1px transparent,0 1px 2px rgba(0,0,0,.8); 
 }
 
 .class-info {
 	color: white; 
-	font-size: 1.25vw;
+	font-size: 1.25rem;
 	margin: 20px;
 	text-shadow: 0 0 1px transparent,0 1px 2px rgba(0,0,0,.8);
 }
@@ -113,7 +123,7 @@ h2 {
 
 .class-info ul li {
 	color: white; 
-	font-size: 1.25vw;
+	font-size: 1.25rem;
     position: relative;
 	text-shadow: 0 0 1px transparent,0 1px 2px rgba(0,0,0,.8); 
 }
@@ -131,7 +141,7 @@ h2 {
 
 .class-info ul li p.li-h {
 	color: #b1997f ; 
-	font-size: 1.5vw;
+	font-size: 1.5rem;
 	text-shadow: 0 0 1px transparent,0 1px 2px rgba(0,0,0,.8); 
 }
 
@@ -155,9 +165,9 @@ h2 {
 	border: 2px solid #504137;
 	cursor: pointer;
 	display: flex;
-	font-size: 1vw;
+	font-size: 1rem;
 	height: 100px;
-	margin: 0 25px;
+	margin: 5px 25px;
 	text-align: left;
 	text-decoration: none;
 	text-shadow: 0 0 1px transparent,0 1px 2px rgba(0,0,0,.8);
@@ -197,7 +207,7 @@ h2 {
 
 .race {
 	color: white;
-	font-size: 1.25vw;
+	font-size: 1.25rem;
 	margin: 0 25px;
 	text-align: center;
 	text-shadow: 0 0 1px transparent,0 1px 2px rgba(0,0,0,.8);
@@ -207,9 +217,9 @@ h2 {
 .frame {
 	border: 5px solid lightgrey;
 	cursor: pointer;
-	height: 130;
+	height: 130px;
 	overflow: hidden;
-	width: 130;
+	width: 130px;
 }
 
 .frame img {
@@ -251,6 +261,13 @@ h2 {
 	margin: 30px;
 }
 
+.spec-separator {
+	border-top: 3px solid #734d26;
+	clear: both;
+	margin: 5px 30px;
+	opacity: .6;
+}
+
 .spec-intro {
 	clear: both;
 	content: "";
@@ -265,35 +282,77 @@ h2 {
 
 .spec-name {
 	float: left;
-	font-size: 3.5vw;
+	font-size: 3.5rem;
 	margin-left: 30px;
 }
 
 .spec-summary {
-	font-size: 1.5vw;
+	font-size: 1.5rem;
 	margin: 30px 30px 0 0;
 }
 
 .spec-abilities {
 	clear: both;
+}
+
+.spec-ability {
+	clear: both;
 	content: "";
-	display: table;
+	display: flex;
 	margin: 30px 30px;
 }
 
-.spec-role {
-	background-color: white;
-	color: white;
-	font-size: 1.5vw;
-	height: 32px;
-	text-shadow: 0 0 1px transparent,0 1px 2px rgba(0,0,0,.8);
+.spec-ab-icon {
+	float: left;
+	height: 64px;
+	margin-right: 20px;
+	width: 64px;
 }
 
 .role-icon-damage {
-	float: left;
-	background: url(UI-LFG-ICON-ROLES.PNG) -66px -64px;
-	background-size: 175px 175px;
-	height: 32px;
-	width: 32px;
+	background: url(UI-LFG-ICON-ROLES.PNG) -66px -66px;
+	background-size: 250px 250px;
 }
 
+.role-icon-tank {
+	background: url(UI-LFG-ICON-ROLES.PNG) 0px -66px;
+	background-size: 250px 250px;
+}
+
+.role-icon-heal {
+	background: url(UI-LFG-ICON-ROLES.PNG) -66px 0px;
+	background-size: 250px 250px;
+}
+
+.spec-ab-text {
+	float: left;
+	margin-top: 16px;	
+	height: 100%;
+}
+
+.spec-ab-title {
+	color: white;
+	font-size: 2rem;
+	height: 50%;
+	text-shadow: 0 0 1px transparent,0 1px 2px rgba(0,0,0,.8);
+	vertical-align: top;
+}
+
+.spec-ab-desc {
+	color: white;
+	font-size: 1.25rem;
+	margin-top: 10px;
+	text-shadow: 0 0 1px transparent,0 1px 2px rgba(0,0,0,.8);
+}
+
+.spec-abilities h3 {
+	font-size: 2rem;
+	margin-left: 30px;
+	text-shadow: 0 0 1px transparent,0 1px 2px rgba(0,0,0,.8);
+}
+
+.micro-icon {
+	height: 25px;
+	vertical-align: text-bottom;
+	width: 25px;
+}
