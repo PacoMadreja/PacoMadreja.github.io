@@ -328,6 +328,10 @@ h2 {
 }
 
 .spec-ab-text {
+	clear: both;
+	content: "";
+	display: flex;
+	flex-flow: column;
 	float: left;
 	margin-top: 1rem;
 	width: 100%;
