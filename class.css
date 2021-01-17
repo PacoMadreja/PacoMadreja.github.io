@@ -1,0 +1,361 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-image: url(Pane-dirtDark.jpg);
+	background-repeat: repeat;
+}
+
+.Separator {
+	background-image: url(Pane-dirtLight.jpg);
+	background-repeat: no-repeat;
+	box-shadow: inset 0 0 0 0.063rem hsla(0,0%,100%,.08);
+	height: 5%;
+	margin: 1rem 0;
+}
+
+.Divider {
+    height: .25rem;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    pointer-events: none;
+}
+
+.Pane-bg {
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	box-shadow: 0 0 3.125rem rgba(11,6,4,.8),0 0 6.25rem rgba(11,6,4,.6),0 0 31.25rem rgba(11,6,4,.3);
+	margin: auto;
+	max-width: 120rem;
+	text-align: top;
+}
+
+.intro {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.columns {
+	clear: both;
+	content: "";
+	display: flex;
+}
+
+.left-column {
+	float: left;
+	vertical-align: top;
+	width: 54%;
+}
+
+.right-column {
+	float: left;
+	vertical-align: top;
+	width: 45%;
+}
+
+@media screen and (max-width: 1080px) {
+	.columns {
+		flex-direction: column-reverse;
+		width: 100%;
+	}
+	
+	.left-column {
+		width: 100%;
+	}
+	  
+	.right-column {
+		margin-left: auto;
+	}
+
+	.spec-list {
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.right-column img {
+	max-width: 100%;
+}
+
+.title {
+	display: block;
+	margin-left: 3.125rem;
+	margin-top: 3.125rem;
+	text-align: left; 
+	vertical-align: top;
+}
+
+.title h1 {
+	color: white;
+	display: inline;
+	font-size: 4rem;
+	margin-left: 1.875rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
+.class-desc {
+	color: white; 
+	font-size: 1.25rem;
+	margin: 1.25rem;
+	text-align: left;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+	vertical-align: top;
+}
+
+h2 {
+	color: white; 
+	font-size: 1.75rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
+.class-info {
+	color: white; 
+	font-size: 1.25rem;
+	margin: 1.25rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
+.class-info ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 2.5rem;
+}
+
+.class-info ul li {
+	color: white; 
+	font-size: 1.25rem;
+    position: relative;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
+.class-info ul li::before {
+	background: url(bullet_sprite.png) -3.75rem 0;
+    background-repeat: no-repeat;
+	content: "";
+	height: 1.25rem;
+	left: -1.875rem;
+	position: absolute;
+    top: 0.313rem;
+    width: 1.25rem;
+}
+
+.class-info ul li p.li-h {
+	color: #b1997f ; 
+	font-size: 1.5rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
+.specs {
+	clear: both;
+	padding: 1.25rem 0 0 0;
+	text-align: center;
+	width: 100%;
+}
+
+.spec-list {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.spec-list-element {
+	align-items: center;
+	border: 0.125rem solid #504137;
+	cursor: pointer;
+	display: flex;
+	font-size: 1.25rem;
+	height: 6.25rem;
+	margin: 0.313rem 1.563rem;
+	text-align: left;
+	text-decoration: none;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+	width: 21.875rem;
+}
+
+.spec-list-element:hover {
+	border-color: #f8b700;
+}
+
+.spec-list-img {
+	border: 0.125rem solid #626567;
+	border-radius: 0.625rem;
+	height: auto;
+	margin: 1.563rem;
+	width: 3.125rem;
+}
+
+.spec-list-label {
+	color: #f8b700;	
+}
+
+.races {
+	clear: both;
+	padding: 1.25rem 0 0 0;
+	text-align: center;
+	max-width: 100%;
+}
+
+.race-list {
+	display: flex;
+	flex: 1;
+	flex-flow: row wrap;
+	flex-shrink: 3;
+	justify-content: center;
+}
+
+.race {
+	color: white;
+	font-size: 1.25rem;
+	margin: 0 1.563rem;
+	text-align: center;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+	width: 8.75rem;
+}
+
+.frame {
+	border: 0.313rem solid lightgrey;
+	cursor: pointer;
+	height: 8.125rem;
+	overflow: hidden;
+	width: 8.125rem;
+}
+
+.frame img {
+	position: relative;
+    transition: transform .2s;
+}
+
+.frame:hover img, .frame:focus img{
+    transform: scale(1.2);
+}
+
+.alliance {
+	border-color: blue;
+}
+
+.horde {
+	border-color: red;
+}
+
+.race-label {
+	margin: 1.25rem 0;
+}
+
+.spec-desc {
+	color: white;
+	margin-top: 1.875rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+	vertical-align: top;
+	width: 100%;
+}
+
+.bg-parchment {
+	background: url(AdventureMapParchmentTile.PNG) repeat;
+	border: 1.25rem solid transparent;
+	border-image: url(AdventureMapBorder.PNG) 20 stretch;
+}
+
+.spec-header {
+	margin: 1.875rem;
+}
+
+.spec-separator {
+	border-top: 0.188rem solid #734d26;
+	clear: both;
+	margin: 0.313rem 1.875rem;
+	opacity: .6;
+}
+
+.spec-intro {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.spec-icon {
+	float: left;
+	height: 5rem;
+	width: 5rem;
+}
+
+.spec-name {
+	float: left;
+	font-size: 3.5rem;
+	margin-left: 1.875rem;
+}
+
+.spec-summary {
+	font-size: 1.5rem;
+	margin: 1.875rem 1.875rem 0 0;
+}
+
+.spec-abilities {
+	clear: both;
+}
+
+.spec-ability {
+	clear: both;
+	content: "";
+	display: flex;
+	margin: 1.875rem 1.875rem;
+}
+
+.spec-ab-icon {
+	float: left;
+	height: 4rem;
+	margin-right: 1.25rem;
+	width: 4rem;
+}
+
+.role-icon-damage {
+	background: url(UI-LFG-ICON-ROLES.PNG) -4.125rem -4.125rem;
+	background-size: 15.625rem 15.625rem;
+}
+
+.role-icon-tank {
+	background: url(UI-LFG-ICON-ROLES.PNG) 0rem -4.125rem;
+	background-size: 15.625rem 15.625rem;
+}
+
+.role-icon-heal {
+	background: url(UI-LFG-ICON-ROLES.PNG) -4.125rem 0rem;
+	background-size: 15.625rem 15.625rem;
+}
+
+.spec-ab-text {
+	float: left;
+	margin-top: 1rem;	
+	height: 100%;
+}
+
+.spec-ab-title {
+	color: white;
+	font-size: 2rem;
+	height: 50%;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+	vertical-align: top;
+}
+
+.spec-ab-desc {
+	color: white;
+	font-size: 1.25rem;
+	margin-top: 0.625rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
+.spec-abilities h3 {
+	font-size: 2rem;
+	margin-left: 1.875rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
+.micro-icon {
+	height: 1.563rem;
+	vertical-align: text-bottom;
+	width: 1.563rem;
+}
