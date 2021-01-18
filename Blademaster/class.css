@@ -76,6 +76,16 @@ body {
 		flex-direction: column;
 		justify-content: center;
 	}
+	
+	.spec-abilities-row {
+		align-items: stretch;
+		clear: both;
+		content: "";
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 0 1.875rem ;
+	}
 }
 
 .right-column img {
@@ -254,6 +264,12 @@ h2 {
 	width: 100%;
 }
 
+.spec-desc h3 {
+	font-size: 2rem;
+	margin: 0 1.875rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
 .bg-parchment {
 	background: url(AdventureMapParchmentTile.PNG) repeat;
 	border: 1.25rem solid transparent;
@@ -261,7 +277,7 @@ h2 {
 }
 
 .spec-header {
-	margin: 1.875rem;
+	margin: 1.875rem 1.875rem 1rem;
 }
 
 .spec-separator {
@@ -296,21 +312,34 @@ h2 {
 
 .spec-abilities {
 	clear: both;
+	content: "";
+	display: flex;
+	flex-direction: column;
+	margin: 0 1.875rem;
 }
 
-.spec-ability {
+.spec-abilities-row {
+	align-items: stretch;
 	clear: both;
 	content: "";
 	display: flex;
-	margin: 1.875rem 1.875rem;
+	justify-content: space-between;
+	margin: 0.4rem 0;
+}
+
+.spec-ability {
+	/* border: 0.188rem solid rgba(115, 77, 38, .4); */
+	content: "";
+	display: flex;
+	flex-basis: 49%;
+	padding: 1rem 0rem;
 }
 
 .spec-ab-icon {
-	background-color:purple;
 	float: left;
 	height: 4rem;
-	margin-right: 1.25rem;
-	width: 4rem;
+	min-width: 4rem;
+	max-width: 4rem;
 }
 
 .role-icon-damage {
@@ -330,29 +359,22 @@ h2 {
 
 .spec-ab-text {
 	float: left;
+	margin-left: 1.25rem;
 	width: 100%;
 }
 
 .spec-ab-title {
-	background-color:yellow;
 	color: white;
 	font-size: 2rem;
-	height: 3rem;
-	padding-top: 1rem;
+	height: 2.25rem;
+	padding-top: .25rem;
 	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
 }
 
 .spec-ab-desc {
-	background-color: green;
 	color: white;
-	font-size: 1.25em;
+	font-size: 1.25rem;
 	margin-top: 0.625rem;
-	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
-}
-
-.spec-abilities h3 {
-	font-size: 2rem;
-	margin-left: 1.875rem;
 	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
 }
 
