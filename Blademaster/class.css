@@ -306,6 +306,7 @@ h2 {
 }
 
 .spec-ab-icon {
+	background-color:purple;
 	float: left;
 	height: 4rem;
 	margin-right: 1.25rem;
@@ -328,20 +329,17 @@ h2 {
 }
 
 .spec-ab-text {
-	clear: both;
-	content: "";
-	display: flex;
-	flex-flow: column;
 	float: left;
-	margin-top: 1rem;
 	width: 100%;
 }
 
 .spec-ab-title {
+	background-color:yellow;
 	color: white;
 	font-size: 2rem;
+	height: 3rem;
+	padding-top: 1rem;
 	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
-	vertical-align: top;
 }
 
 .spec-ab-desc {
@@ -350,7 +348,6 @@ h2 {
 	font-size: 1.25rem;
 	margin-top: 0.625rem;
 	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
-	vertical-align: top;
 }
 
 .spec-abilities h3 {
