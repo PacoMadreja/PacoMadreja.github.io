@@ -219,12 +219,25 @@ h2 {
 }
 
 .race {
-	color: white;
+	color: #f8b700;
 	font-size: 1.25rem;
 	margin: 0 1.563rem;
 	text-align: center;
+	text-decoration: none;
 	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
 	width: 8.75rem;
+}
+
+.race:hover .frame, .race:focus .frame{
+	border-color: #f8b700;
+}
+
+.race:hover .race-img, .race:focus .race-img{
+    transform: scale(1.2);
+}
+
+.race:hover .race-label, .race:focus .race-label{
+	color: white;
 }
 
 .frame {
@@ -240,10 +253,6 @@ h2 {
     transition: transform .2s;
 }
 
-.frame:hover img, .frame:focus img{
-    transform: scale(1.2);
-}
-
 .alliance {
 	border-color: blue;
 }
@@ -252,8 +261,14 @@ h2 {
 	border-color: red;
 }
 
+.faction {
+	position: relative;
+	top: -1.5rem;
+}
+
 .race-label {
-	margin: 1.25rem 0;
+	position: relative;
+	top: -1.5rem;
 }
 
 .spec-desc {
@@ -266,7 +281,7 @@ h2 {
 
 .spec-desc h3 {
 	font-size: 2rem;
-	margin: 0 1.875rem;
+	margin: 0 3rem;
 	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
 }
 
@@ -280,10 +295,17 @@ h2 {
 	margin: 1.875rem 1.875rem 1rem;
 }
 
+.spec-header + .spec-separator {
+	border-top: 0.188rem solid #734d26;
+	clear: both;
+	margin: 0.313rem 2rem;
+	opacity: .6;
+}
+
 .spec-separator {
 	border-top: 0.188rem solid #734d26;
 	clear: both;
-	margin: 0.313rem 1.875rem;
+	margin: 0.313rem 3rem;
 	opacity: .6;
 }
 
@@ -315,7 +337,7 @@ h2 {
 	content: "";
 	display: flex;
 	flex-direction: column;
-	margin: 0 1.875rem;
+	margin: 0 5rem;
 }
 
 .spec-abilities-row {
