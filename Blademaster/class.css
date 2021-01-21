@@ -290,16 +290,11 @@ h2 {
 
 .bg-parchment {
 	background:
-		url(filagree-top-left.PNG) no-repeat,
-		url(filagree-top-right.PNG) no-repeat,
-		url(filagree-bot-left.PNG) no-repeat,
-		url(filagree-bot-right.PNG) no-repeat,
+		url(filagree-top-left.PNG) no-repeat top left,
+		url(filagree-top-right.PNG) no-repeat top right,
+		url(filagree-bot-left.PNG) no-repeat bottom left,
+		url(filagree-bot-right.PNG) no-repeat bottom right,
 		url(AdventureMapParchmentTile.PNG);
-	background-position:
-		top left,
-		top right,
-		bottom left,
-		bottom right;
 	border: 1.25rem solid transparent;
 	border-image: url(AdventureMapBorder.PNG) 20 stretch;
 }
