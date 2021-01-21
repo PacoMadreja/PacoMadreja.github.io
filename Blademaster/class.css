@@ -96,13 +96,16 @@ body {
 	display: block;
 	margin-left: 3.125rem;
 	margin-top: 3.125rem;
-	text-align: left; 
-	vertical-align: top;
+	text-align: left;
+}
+
+.title img {
+	vertical-align: middle;
 }
 
 .title h1 {
 	color: white;
-	display: inline;
+	display: inline-block;
 	font-size: 4rem;
 	margin-left: 1.875rem;
 	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
@@ -286,7 +289,17 @@ h2 {
 }
 
 .bg-parchment {
-	background: url(AdventureMapParchmentTile.PNG) repeat;
+	background:
+		url(filagree-top-left.PNG) no-repeat,
+		url(filagree-top-right.PNG) no-repeat,
+		url(filagree-bot-left.PNG) no-repeat,
+		url(filagree-bot-right.PNG) no-repeat,
+		url(AdventureMapParchmentTile.PNG);
+	background-position:
+		top left,
+		top right,
+		bottom left,
+		bottom right;
 	border: 1.25rem solid transparent;
 	border-image: url(AdventureMapBorder.PNG) 20 stretch;
 }
