@@ -293,8 +293,7 @@ h2 {
 		url(filagree-top-left.PNG) no-repeat top left,
 		url(filagree-top-right.PNG) no-repeat top right,
 		url(filagree-bot-left.PNG) no-repeat bottom left,
-		url(filagree-bot-right.PNG) no-repeat bottom right,
-		url(AdventureMapParchmentTile.PNG);
+		url(filagree-bot-right.PNG) no-repeat bottom right;
 	border: 1.25rem solid transparent;
 	border-image: url(AdventureMapBorder.PNG) 20 stretch;
 }
