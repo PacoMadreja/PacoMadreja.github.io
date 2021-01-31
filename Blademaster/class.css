@@ -27,7 +27,7 @@ body {
 .Pane-bg {
 	background-position: top;
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: auto 55rem;
 	box-shadow: 0 0 3.125rem rgba(11,6,4,.8),0 0 6.25rem rgba(11,6,4,.6),0 0 31.25rem rgba(11,6,4,.3);
 	margin: auto;
 	max-width: 120rem;
@@ -38,6 +38,7 @@ body {
 	clear: both;
 	content: "";
 	display: table;
+	max-width: 90%;
 }
 
 .columns {
@@ -47,49 +48,23 @@ body {
 }
 
 .left-column {
-	float: left;
 	vertical-align: top;
-	width: 54%;
+	width: 50%;
+}
+
+.left-column-content {
+	margin-left: 15%;
 }
 
 .right-column {
-	float: left;
 	vertical-align: top;
-	width: 45%;
+	width: 50%;
 }
 
-@media screen and (max-width: 1080px) {
-	.columns {
-		flex-direction: column-reverse;
-		width: 100%;
-	}
-	
-	.left-column {
-		width: 100%;
-	}
-	  
-	.right-column {
-		margin-left: auto;
-	}
-
-	.spec-list {
-		flex-direction: column;
-		justify-content: center;
-	}
-	
-	.spec-abilities-row {
-		align-items: stretch;
-		clear: both;
-		content: "";
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		margin: 0 1.875rem ;
-	}
-}
-
-.right-column img {
-	max-width: 100%;
+.right-column img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .title {
@@ -100,16 +75,16 @@ body {
 }
 
 .title img {
-	height: 10rem;
+	height: 7rem;
 	vertical-align: middle;
-	width: 10rem;
+	width: 7rem;
 }
 
 .title h1 {
 	color: white;
 	display: inline-block;
-	font-size: 4rem;
-	margin-left: 1.875rem;
+	font-size: 4.3rem;
+	margin-left: 1.5rem;
 	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
 	vertical-align: middle;
 }
@@ -138,13 +113,14 @@ h2 {
 
 .class-info ul {
 	list-style: none;
-	margin: 0;
+	margin: 1rem 0;
 	padding-left: 2.5rem;
 }
 
 .class-info ul li {
 	color: white; 
 	font-size: 1.25rem;
+	margin: .75rem 0;
     position: relative;
 	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
 }
@@ -160,15 +136,19 @@ h2 {
     width: 1.25rem;
 }
 
-.class-info ul li p.li-h {
+.class-info ul li div.li-h {
 	color: #b1997f ; 
 	font-size: 1.5rem;
 	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
 }
 
+.right-column img {
+	max-width: 100%;
+}
+
 .specs {
 	clear: both;
-	padding: 1.25rem 0 0 0;
+	margin-top: -10rem;
 	text-align: center;
 	width: 100%;
 }
@@ -283,10 +263,12 @@ h2 {
 
 .spec-desc {
 	color: white;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 1.875rem;
 	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
 	vertical-align: top;
-	width: 100%;
+	width: 90%;
 }
 
 .spec-desc h3 {
@@ -326,9 +308,17 @@ h2 {
 
 .spec-intro {
 	align-items: center;
-	clear: both;
+	clear: left;
 	display: flex;
 	/* justify-content: center; */
+}
+
+.backSpec {
+	background: url(misc_arrowlup.PNG) no-repeat top right;
+	cursor: pointer;
+	float: right;
+	height: 7rem;
+	width: 7rem;
 }
 
 .spec-icon {
@@ -420,4 +410,34 @@ h2 {
 	height: 1.563rem;
 	vertical-align: text-bottom;
 	width: 1.563rem;
+}
+
+@media screen and (max-width: 1080px) {	
+	.left-column {
+		width: 100%;
+	}
+	  
+	.right-column {
+		display: none;
+		width: 0;
+	}
+
+	.specs {
+		margin-top: 0;
+	}
+
+	.spec-list {
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.spec-abilities-row {
+		align-items: stretch;
+		clear: both;
+		content: "";
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 0 1.875rem ;
+	}
 }
