@@ -12,7 +12,6 @@ body {
 	background-repeat: no-repeat;
 	box-shadow: inset 0 0 0 0.063rem hsla(0,0%,100%,.08);
 	height: 5%;
-	margin: 1rem 0;
 }
 
 .Divider {
@@ -306,7 +305,6 @@ h2 {
 	align-items: center;
 	clear: left;
 	display: flex;
-	/* justify-content: center; */
 }
 
 .backSpec {
@@ -352,7 +350,6 @@ h2 {
 }
 
 .spec-ability {
-	/* border: 0.188rem solid rgba(115, 77, 38, .4); */
 	content: "";
 	display: flex;
 	flex-basis: 49%;
