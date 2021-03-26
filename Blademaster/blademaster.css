@@ -392,6 +392,13 @@ h2 {
 	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
 }
 
+.spec-ab-cost {
+	color: #fadf91;
+	font-size: 1.25rem;
+	margin-top: 0.625rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
 .spec-ab-desc {
 	color: white;
 	font-size: 1.25rem;
