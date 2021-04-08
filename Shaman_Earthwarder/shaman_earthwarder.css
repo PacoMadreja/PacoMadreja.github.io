@@ -1,0 +1,571 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-image: url(Pane-dirtDark.jpg);
+	background-repeat: repeat;
+}
+
+.navbar {
+	background-image: url(sitenav_bar_bg.webp);
+	font-size: 1.5rem;
+	overflow: hidden;
+}
+
+.navbar a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	background-color: inherit;
+	border: none;
+	color: white;
+	font: inherit;
+	margin: 0;
+	outline: none;
+	padding: 1rem;
+}
+
+.navbar a:hover, .dropdown:hover {
+	background-image: url(sitenav-bar-subscribe-bg.webp);
+}
+
+.dropdown-content {
+	box-shadow: 0 .5rem 1.5rem 0 rgba(0,0,0,.5);
+	display: none;
+	font-size: 1.2rem;
+	position: absolute;
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.column {
+	background-image: url(sitenav_bar_bg.webp);
+	float: left;
+}
+
+.column a {
+	float: none;
+	color: white;
+	padding: 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.column a:hover {
+	background-image: url(sitenav-bar-subscribe-bg.webp);
+}
+
+/* Clear floats after the columns */
+.row:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.column {
+		height: auto;
+		width: 100%;
+	}
+}
+
+.Contact {
+	font-size: 1rem;
+	height: 5%;
+	padding: 2rem;
+	text-align: center;
+}
+
+.Contact a{
+	color: white;
+	text-decoration: none;
+}
+
+.Separator {
+	background-image: url(Pane-dirtLight.jpg);
+	background-repeat: no-repeat;
+	box-shadow: inset 0 0 0 0.063rem hsla(0,0%,100%,.08);
+	height: 5%;
+}
+
+.Divider {
+    height: .25rem;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    pointer-events: none;
+}
+
+.Pane-bg {
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: auto 55rem;
+	box-shadow: 0 0 3.125rem rgba(11,6,4,.8),0 0 6.25rem rgba(11,6,4,.6),0 0 31.25rem rgba(11,6,4,.3);
+	margin: auto;
+	max-width: 120rem;
+	text-align: top;
+}
+
+.intro {
+	clear: both;
+	content: "";
+	display: table;
+	margin: auto;
+}
+
+.columns {
+	clear: both;
+	content: "";
+	display: flex;
+}
+
+.left-column {
+	vertical-align: top;
+	width: 50%;
+}
+
+.left-column-content {
+	margin-left: 15%;
+}
+
+.right-column {
+	vertical-align: top;
+	width: 50%;
+}
+
+.right-column img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.title {
+	display: block;
+	margin-left: 3.125rem;
+	margin-top: 3.125rem;
+	text-align: left;
+}
+
+.title img {
+	height: 7rem;
+	vertical-align: middle;
+	width: 7rem;
+}
+
+.title h1 {
+	color: white;
+	display: inline-block;
+	font-size: 4.3rem;
+	margin-left: 1.5rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+	vertical-align: middle;
+}
+
+.class-desc {
+	color: white; 
+	font-size: 1.25rem;
+	margin: 1.25rem;
+	text-align: left;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+	vertical-align: top;
+}
+
+h2 {
+	color: white; 
+	font-size: 1.75rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
+.class-info {
+	color: white; 
+	font-size: 1.25rem;
+	margin: 1.25rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
+.class-info ul {
+	list-style: none;
+	margin: 1rem 0;
+	padding-left: 2.5rem;
+}
+
+.class-info ul li {
+	color: white; 
+	font-size: 1.25rem;
+	margin: .75rem 0;
+    position: relative;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
+.class-info ul li::before {
+	background: url(bullet_sprite.png) -3.75rem 0;
+    background-repeat: no-repeat;
+	content: "";
+	height: 1.25rem;
+	left: -1.875rem;
+	position: absolute;
+    top: 0.313rem;
+    width: 1.25rem;
+}
+
+.class-info ul li div.li-h {
+	color: #b1997f ; 
+	font-size: 1.5rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
+.right-column img {
+	max-width: 100%;
+}
+
+.specs {
+	clear: both;
+	margin-top: -10rem;
+	text-align: center;
+	width: 100%;
+}
+
+.spec-list {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.spec-list-element {
+	align-items: center;
+	border: 0.125rem solid #504137;
+	cursor: pointer;
+	display: flex;
+	font-size: 1.25rem;
+	height: 6.25rem;
+	margin: 0.313rem 1.563rem;
+	text-align: left;
+	text-decoration: none;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+	width: 21.875rem;
+}
+
+.spec-list-element:hover,  .spec-list-element:focus {
+	border-color: #f8b700;
+}
+
+.spec-list-element:hover .spec-list-label,  .spec-list-element:focus .spec-list-label{
+	color: white;
+}
+
+.spec-list-img {
+	border: 0.125rem solid #626567;
+	border-radius: 0.625rem;
+	height: auto;
+	margin: 1.563rem;
+	width: 3.125rem;
+}
+
+.spec-list-label {
+	color: #f8b700;	
+}
+
+.races {
+	clear: both;
+	padding: 1.25rem 0 0 0;
+	text-align: center;
+}
+
+.race-list {
+	display: flex;
+	flex: 1;
+	flex-flow: row wrap;
+	flex-shrink: 3;
+	justify-content: center;
+}
+
+.race {
+	color: #f8b700;
+	font-size: 1.25rem;
+	margin: 0 1.563rem;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+	width: 8.75rem;
+}
+
+.race:hover .frame, .race:focus .frame {
+	border-color: #f8b700;
+}
+
+.race:hover .race-img, .race:focus .race-img{
+    transform: scale(1.2);
+}
+
+.race:hover .race-label, .race:focus .race-label {
+	color: white;
+}
+
+.frame {
+	border: 0.313rem solid lightgrey;
+	cursor: pointer;
+	height: 8.125rem;
+	overflow: hidden;
+	width: 8.125rem;
+}
+
+.frame img {
+	position: relative;
+    transition: transform .2s;
+}
+
+.alliance {
+	border-color: blue;
+}
+
+.horde {
+	border-color: red;
+}
+
+.faction {
+	position: relative;
+	top: -1.5rem;
+}
+
+.race-label {
+	position: relative;
+	top: -1.5rem;
+}
+
+.spec-desc {
+	color: white;
+	margin: 1.5rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+	vertical-align: top;
+}
+
+.spec-desc h3 {
+	font-size: 2rem;
+	margin: 0 3rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
+.bg-parchment {
+	background:
+		url(filagree-top-left.PNG) no-repeat top left,
+		url(filagree-top-right.PNG) no-repeat top right,
+		url(filagree-bot-left.PNG) no-repeat bottom left,
+		url(filagree-bot-right.PNG) no-repeat bottom right,
+		url(AdventureMapParchmentTile.PNG);
+	border: 1.25rem solid transparent;
+	border-image: url(AdventureMapBorder.PNG) 20 stretch;
+}
+
+.spec-header {
+	margin: 1.875rem 1.875rem 1rem;
+}
+
+.spec-header + .spec-separator {
+	border-top: 0.188rem solid #734d26;
+	clear: both;
+	margin: 0.313rem 2rem;
+	opacity: .6;
+}
+
+.spec-separator {
+	border-top: 0.188rem solid #734d26;
+	clear: both;
+	margin: 0.313rem 3rem;
+	opacity: .6;
+}
+
+.spec-intro {
+	align-items: center;
+	clear: left;
+	display: flex;
+}
+
+.backSpec {
+	background: url(misc_arrowlup.PNG) no-repeat top right;
+	cursor: pointer;
+	float: right;
+	height: 7rem;
+	width: 7rem;
+}
+
+.spec-icon {
+	float: left;
+	height: 7rem;
+	width: 7rem;
+}
+
+.spec-name {
+	font-size: 3.5rem;
+	float: left;
+	margin-left: 1.875rem;
+}
+
+.spec-summary {
+	font-size: 1.5rem;
+	margin: 1.875rem 1.875rem 0 0;
+}
+
+.spec-talents {
+	clear: both;
+	content: "";
+	display: flex;
+	flex-direction: column;
+	margin: 0 5rem;
+}
+
+.spec-talents-row {
+	align-items: stretch;
+	clear: both;
+	content: "";
+	display: flex;
+	justify-content: space-between;
+	margin: 0.4rem 0;
+}
+
+.spec-talents-row-level {
+	content: "";
+	display: flex;
+	flex-basis: 4%;
+	justify-content: center;
+	padding: 1rem 0rem;
+}
+
+.spec-talent {
+	border: 2px solid #dabc63;;
+	content: "";
+	display: flex;
+	flex-basis: 32%;
+	justify-content: center;
+	margin: .5rem;
+	padding: .5rem .5rem;
+}
+
+.spec-abilities {
+	clear: both;
+	content: "";
+	display: flex;
+	flex-direction: column;
+	margin: 0 5rem;
+}
+
+.spec-abilities-row {
+	align-items: stretch;
+	clear: both;
+	content: "";
+	display: flex;
+	justify-content: space-between;
+	margin: 0.4rem 0;
+}
+
+.spec-ability {
+	content: "";
+	display: flex;
+	flex-basis: 49%;
+	padding: 1rem 0rem;
+}
+
+.spec-ab-icon {
+	float: left;
+	height: 4rem;
+	min-width: 4rem;
+	max-width: 4rem;
+}
+
+.role-icon-damage {
+	background: url(UI-LFG-ICON-ROLES.PNG) -4.125rem -4.125rem;
+	background-size: 15.625rem 15.625rem;
+}
+
+.role-icon-tank {
+	background: url(UI-LFG-ICON-ROLES.PNG) 0rem -4.125rem;
+	background-size: 15.625rem 15.625rem;
+}
+
+.role-icon-heal {
+	background: url(UI-LFG-ICON-ROLES.PNG) -4.125rem 0rem;
+	background-size: 15.625rem 15.625rem;
+}
+
+.spec-ab-text {
+	float: left;
+	margin-left: 1.25rem;
+	width: 100%;
+}
+
+.spec-ab-title {
+	color: white;
+	font-size: 2rem;
+	height: 2.25rem;
+	padding-top: .25rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
+.spec-ab-desc {
+	color: white;
+	font-size: 1.25rem;
+	margin-top: 0.625rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
+.spec-ab-link {
+	color: #7ad5ff;
+	text-decoration: none;
+}
+
+.micro-icon {
+	height: 1.563rem;
+	vertical-align: text-bottom;
+	width: 1.563rem;
+}
+
+@media screen and (max-width: 1080px) {	
+	.left-column {
+		width: 100%;
+	}
+	
+	.left-column-content {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	  
+	.right-column {
+		display: none;
+		width: 0;
+	}
+
+	.specs {
+		margin-top: 0;
+	}
+
+	.spec-list {
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.spec-abilities-row {
+		align-items: stretch;
+		clear: both;
+		content: "";
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 0 1.875rem ;
+	}
+}
