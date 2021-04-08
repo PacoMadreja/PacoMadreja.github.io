@@ -90,8 +90,8 @@ body {
 	display: flex;
 	font-size: 1.25rem;
 	height: 5%;
-	padding: 1rem 0 0 0;
 	justify-content: center;
+	padding: 1rem 0 0 0;
 }
 
 .MailTo-icon {
@@ -320,7 +320,7 @@ h2 {
 	border-color: #f8b700;
 }
 
-.race:hover .race-img, .race:focus .race-img{
+.race:hover .race-img, .race:focus .race-img {
     transform: scale(1.2);
 }
 
@@ -350,8 +350,24 @@ h2 {
 }
 
 .faction {
+	display: flex;
+	justify-content: center;
 	position: relative;
 	top: -1.5rem;
+}
+
+.factionAlliance {
+	width: 3.5rem;
+	height: 3.5rem;
+	background: url(emblem-alliance.png) no-repeat;
+	background-size: 3.5rem 3.5rem;
+}
+
+.factionHorde {
+	width: 3.5rem;
+	height: 3.5rem;
+	background: url(emblem-horde.png) no-repeat;
+	background-size: 3.5rem 3.5rem;
 }
 
 .race-label {
@@ -524,6 +540,13 @@ h2 {
 	font-size: 2rem;
 	height: 2.25rem;
 	padding-top: .25rem;
+	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
+}
+
+.spec-ab-cost {
+	color: #fadf91;
+	font-size: 1.25rem;
+	margin-top: 0.625rem;
 	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
 }
 
