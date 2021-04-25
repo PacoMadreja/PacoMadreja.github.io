@@ -47,7 +47,6 @@
 	font-size: 2rem;
 	text-align: center;
 	padding: .5rem;
-	width: 100%;
 }
 
 .card:hover .card-frame, .card:focus .card-frame {
