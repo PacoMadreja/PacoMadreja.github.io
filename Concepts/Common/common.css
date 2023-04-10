@@ -144,18 +144,25 @@ body {
 	clear: both;
 	content: "";
 	display: flex;
+	margin-bottom: 3rem;
 }
 
 .left-column {
+	padding-top: 3rem;
 	vertical-align: top;
 	width: 50%;
 }
 
 .left-column-content {
+	background: rgba(0,0,0,0.75);
+	border: 0.125rem solid #504137;
+	box-shadow: 0 0 2rem rgba(11,6,4,.8),0 0 4rem rgba(11,6,4,.6),0 0 8rem rgba(11,6,4,.3);
 	margin-left: 15%;
+	padding: 0rem 1rem 1rem 1rem;
 }
 
 .right-column {
+	display: flex;
 	vertical-align: top;
 	width: 50%;
 }
@@ -168,13 +175,12 @@ body {
 
 .title {
 	display: block;
-	margin-left: 3.125rem;
-	margin-top: 3.125rem;
 	text-align: left;
 }
 
 .title img {
 	height: 7rem;
+	margin-left: 1.5rem;
 	vertical-align: middle;
 	width: 7rem;
 }
@@ -183,7 +189,7 @@ body {
 	color: white;
 	display: inline-block;
 	font-size: 4.3rem;
-	margin-left: 1.5rem;
+	margin-left: 1rem;
 	text-shadow: 0 0 0.1rem transparent,0 0.1rem 0.2rem rgba(0,0,0,.8);
 	vertical-align: middle;
 }
@@ -260,6 +266,7 @@ h2 {
 
 .spec-list-element {
 	align-items: center;
+	background: rgba(0,0,0,0.25);
 	border: 0.125rem solid #504137;
 	cursor: pointer;
 	display: flex;
@@ -274,6 +281,7 @@ h2 {
 
 .spec-list-element:hover,  .spec-list-element:focus {
 	border-color: #f8b700;
+	box-shadow: 0 0 .25rem rgba(255,255,255,.6),0 0 .5rem rgba(255,255,255,.3),0 0 1rem rgba(255,255,255,.1);
 }
 
 .spec-list-element:hover .spec-list-label,  .spec-list-element:focus .spec-list-label{
@@ -316,19 +324,8 @@ h2 {
 	width: 8.75rem;
 }
 
-.race:hover .frame, .race:focus .frame {
-	border-color: #f8b700;
-}
-
-.race:hover .race-img, .race:focus .race-img {
-    transform: scale(1.2);
-}
-
-.race:hover .race-label, .race:focus .race-label {
-	color: white;
-}
-
 .frame {
+	box-shadow: 0 0 .5rem rgba(0,0,0,.8),0 0 1rem rgba(0,0,0,.6),0 0 2rem rgba(0,0,0,.3);
 	border: 0.313rem solid lightgrey;
 	cursor: pointer;
 	height: 8.125rem;
@@ -339,6 +336,19 @@ h2 {
 .frame img {
 	position: relative;
     transition: transform .2s;
+}
+
+.race:hover .frame, .race:focus .frame {
+	border-color: #f8b700;
+	box-shadow: 0 0 .25rem rgba(255,255,255,.6),0 0 .5rem rgba(255,255,255,.3),0 0 1rem rgba(255,255,255,.1);
+}
+
+.race:hover .race-img, .race:focus .race-img {
+    transform: scale(1.2);
+}
+
+.race:hover .race-label, .race:focus .race-label {
+	color: white;
 }
 
 .alliance {
@@ -424,11 +434,12 @@ h2 {
 }
 
 .backSpec {
-	background: url(misc_arrowlup.PNG) no-repeat top right;
+	background: url(misc_arrowlup.PNG) no-repeat;
+	background-size: contain;
 	cursor: pointer;
 	float: right;
-	height: 7rem;
-	width: 7rem;
+	height: 4.5rem;
+	width: 4.5rem;
 }
 
 .spec-icon {
@@ -474,6 +485,7 @@ h2 {
 }
 
 .spec-talent {
+	background: rgba(0,0,0,0.25);
 	border: 2px solid #dabc63;;
 	content: "";
 	display: flex;
@@ -517,16 +529,19 @@ h2 {
 .role-icon-damage {
 	background: url(UI-LFG-ICON-ROLES.PNG) -4.125rem -4.125rem;
 	background-size: 15.625rem 15.625rem;
+	box-shadow: none;
 }
 
 .role-icon-tank {
 	background: url(UI-LFG-ICON-ROLES.PNG) 0rem -4.125rem;
 	background-size: 15.625rem 15.625rem;
+	box-shadow: none;
 }
 
 .role-icon-heal {
 	background: url(UI-LFG-ICON-ROLES.PNG) -4.125rem 0rem;
 	background-size: 15.625rem 15.625rem;
+	box-shadow: none;
 }
 
 .spec-ab-text {
