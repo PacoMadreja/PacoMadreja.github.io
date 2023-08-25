@@ -289,8 +289,9 @@ h2 {
 }
 
 .spec-list-img {
-	border: 0.125rem solid #626567;
+	border: 0.125rem solid #A9AAAC;
 	border-radius: 0.625rem;
+	box-shadow: 0.0625rem 0.0625rem rgba(0,0,0,0.75);
 	height: auto;
 	margin: 1.563rem;
 	width: 3.125rem;
@@ -526,6 +527,14 @@ h2 {
 	max-width: 4rem;
 }
 
+.spec-ab-icon img{
+	border: 0.125rem solid #A9AAAC;
+	border-radius: 0.625rem;
+	box-shadow: 0.125rem 0.125rem rgba(0,0,0,0.5);
+	height: 100%;
+	width: 100%;
+}
+
 .role-icon-damage {
 	background: url(UI-LFG-ICON-ROLES.PNG) -4.125rem -4.125rem;
 	background-size: 15.625rem 15.625rem;
@@ -583,6 +592,9 @@ h2 {
 }
 
 .micro-icon {
+	border: 0.125rem solid #A9AAAC;
+	border-radius: 0.4rem;
+	box-shadow: 0.125rem 0.125rem rgba(0,0,0,0.5);
 	height: 1.563rem;
 	vertical-align: text-bottom;
 	width: 1.563rem;
